@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Move contents of ./docs/browser to ./docs
-mv ./docs/browser/* ./docs/
+# Remove everything from docs
+rm -r ./docs/*
 
-# Remove the ./docs/browser directory
-rm -r ./docs/browser
+# Copy everything from dist to docs
+cp -r ./dist/* ./docs/
